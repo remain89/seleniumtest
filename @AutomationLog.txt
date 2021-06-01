@@ -1,0 +1,79 @@
+2021-05-18 17:39:28.709 dd.py[20] <module> -> Find Control Timeout: {Name: 'buttonMenu4', ControlType: ButtonControl}
+2021-05-18 17:41:05.221 dd.py[22] <module> -> Find Control Timeout: {Name: '계기관리', ControlType: ButtonControl}
+2021-05-20 10:13:11.092 dd.py[22] <module> -> Find Control Timeout: {Name: 'buttonMenu4', ControlType: ButtonControl}
+2021-05-20 13:45:08.257 dd.py[22] <module> -> Find Control Timeout: {Name: 'WindowsForms10.BUTTON.app.0.1ca0192_r20_ad1', ControlType: ButtonControl}
+2021-05-20 13:46:56.903 dd.py[22] <module> -> Find Control Timeout: {Name: 'WindowsForms10.BUTTON.app.0.1ca0192_r20_ad111', ControlType: ButtonControl}
+2021-05-20 13:47:20.809 dd.py[22] <module> -> Find Control Timeout: {Name: 'WindowsForms10.BUTTON.app.0.1ca0192_r20_ad111', ControlType: ButtonControl}
+2021-05-20 14:03:41.415 dd.py[23] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ButtonControl}
+2021-05-20 14:52:16.330 dd.py[23] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ButtonControl}
+2021-05-20 16:01:25.095 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ButtonControl}
+2021-05-20 16:02:20.565 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ButtonControl}
+2021-05-20 16:02:45.906 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ButtonControl}
+2021-05-20 16:03:19.076 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ButtonControl}
+2021-05-20 16:04:08.325 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ButtonControl}
+2021-05-20 16:05:13.535 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ComboBoxControl}
+2021-05-20 16:05:42.288 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ComboBoxControl}
+2021-05-20 16:08:09.795 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ComboBoxControl}
+2021-05-20 16:08:30.670 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ComboBoxControl}
+2021-05-20 16:13:11.800 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', LocalizedControlType: '목록 항목', ControlType: ComboBoxControl}
+2021-05-20 16:15:03.135 dd.py[24] <module> -> Find Control Timeout: {Name: '목록 항목', ControlType: ComboBoxControl}
+2021-05-20 16:15:36.246 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ComboBoxControl}
+2021-05-20 16:15:53.815 dd.py[24] <module> -> Find Control Timeout: {Name: '0x31 : 보안모듈 적용 계기', ControlType: ComboBoxControl}
+2021-05-20 16:16:17.264 dd.py[24] <module> -> Find Control Timeout: {Name: '목록 항목', ControlType: ComboBoxControl}
+2021-05-20 16:28:39.132 dd.py[23] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: ComboBoxControl}
+2021-05-20 16:30:14.251 dd.py[23] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: ComboBoxControl}
+2021-05-20 17:27:19.106 dd.py[23] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: ComboBoxControl}
+2021-05-20 17:28:25.008 dd.py[23] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: ButtonControl}
+2021-05-20 17:28:41.800 dd.py[23] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: SplitButtonControl}
+2021-05-20 17:30:59.981 dd.py[23] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: RadioButtonControl}
+2021-05-20 17:40:29.276 dd.py[23] <module> -> Find Control Timeout: {Name: '목록 항목', Element: 3, ControlType: CheckBoxControl}
+2021-05-20 17:43:31.859 dd.py[23] <module> -> Find Control Timeout: {Name: 'Data Dump', ControlType: ButtonControl}
+2021-05-20 17:45:01.932 dd.py[25] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: CheckBoxControl}
+2021-05-20 17:47:07.921 dd.py[24] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: ListControl}
+2021-05-20 17:47:52.328 dd.py[24] <module> -> Find Control Timeout: {Name: '0x01 : 모든 계기 (Default)', ControlType: ListItemControl}
+2021-05-21 10:21:55.677 dd.py[23] <module> -> Find Control Timeout: {Name: 'Data Dump', ControlType: RadioButtonControl}
+2021-05-21 10:22:42.019 dd.py[28] <module> -> Find Control Timeout: {Name: 'comboBoxG03', ControlType: ComboBoxControl}
+2021-05-21 10:24:45.388 dd.py[28] <module> -> Find Control Timeout: {Name: 'comboBoxG03', ControlType: ComboBoxControl}
+2021-05-21 10:25:50.124 dd.py[28] <module> -> Find Control Timeout: {Name: 'comboBoxG03', ControlType: ComboBoxControl}
+2021-05-21 10:30:27.182 dd.py[28] <module> -> Find Control Timeout: {Name: 'comboBoxG03', ControlType: ComboBoxControl}
+2021-05-21 10:37:15.740 dd.py[28] <module> -> Find Control Timeout: {Name: 'comboBoxG03', ControlType: ComboBoxControl}
+2021-05-21 10:37:39.194 dd.py[29] <module> -> Find Control Timeout: {ControlType: ButtonControl}
+2021-05-21 10:38:31.138 dd.py[29] <module> -> Find Control Timeout: {itemName: '0x04 : 순방향+역방향 LP', ControlType: ButtonControl}
+2021-05-21 10:39:31.521 dd.py[29] <module> -> Find Control Timeout: {AutomationId: 'DropDown', ControlType: ButtonControl}
+2021-05-21 10:53:29.413 dd.py[28] <module> -> Find Control Timeout: {Name: 'comboBoxG03', ControlType: ComboBoxControl}
+2021-05-24 14:59:58.136 dd.py[25] <module> -> Find Control Timeout: {Name: 'sysMIBEncrypt', ControlType: TextControl}
+2021-05-24 15:00:43.902 dd.py[30] <module> -> Find Control Timeout: {Name: 'sysMIBEncrypt', ControlType: TextControl}
+2021-05-24 15:01:52.371 dd.py[30] <module> -> Find Control Timeout: {Name: 'textBox_SysEncrypt', ControlType: TextControl}
+2021-05-24 15:46:36.459 dd.py[31] <module> -> Find Control Timeout: {Name: 'textBox_SysEncrypt', ControlType: TextControl}
+2021-05-24 15:48:16.908 dd.py[31] <module> -> Find Control Timeout: {Name: 'sysMIBEncrypt', ControlType: TextControl}
+2021-05-24 15:48:36.638 dd.py[31] <module> -> Find Control Timeout: {Name: 'sysMlBEncrypt', ControlType: TextControl}
+2021-05-24 15:49:41.971 dd.py[32] <module> -> Find Control Timeout: {Name: 'textBox_SysEncrypt', ControlType: TextControl}
+2021-05-24 15:50:38.776 dd.py[32] <module> -> Find Control Timeout: {Name: 'WindowsForms10.EDIT.app.0.1ca0192_r20_ad1', ControlType: TextControl}
+2021-05-24 15:51:42.465 dd.py[32] <module> -> Find Control Timeout: {ClassName: 'WindowsForms10.EDIT.app.0.1ca0192_r20_ad1', ControlType: TextControl}
+2021-05-24 15:52:34.216 dd.py[32] <module> -> Find Control Timeout: {Name: 'sysMIBEncrypt', ControlType: TextControl}
+2021-05-24 15:53:38.289 dd.py[32] <module> -> Find Control Timeout: {Name: 'sysMIBEncrypt', ControlType: EditControl}
+2021-05-24 15:55:00.161 dd.py[32] <module> -> Find Control Timeout: {Name: 'textBox_SysEncrypt', ControlType: EditControl}
+2021-05-24 15:56:04.973 dd.py[32] <module> -> Find Control Timeout: {Name: 'SysEncrypt', ControlType: EditControl}
+2021-05-24 15:56:27.687 dd.py[32] <module> -> Find Control Timeout: {Name: 'sysMIBEncrypt', ControlType: EditControl}
+2021-05-24 16:01:42.964 dd.py[32] <module> -> Find Control Timeout: {Name: 'textBox_SysEncrypt', ControlType: TextControl}
+2021-05-24 17:08:00.196 dd.py[32] <module> -> Find Control Timeout: {Name: 'sysReset', ControlType: ComboBoxControl}
+2021-05-24 17:09:23.529 dd.py[32] <module> -> Find Control Timeout: {Name: '목록 항목', ControlType: ComboBoxControl}
+2021-05-24 17:12:02.435 dd.py[32] <module> -> Find Control Timeout: {Name: 'sysReset', ControlType: ComboBoxControl}
+2021-05-24 17:12:27.337 dd.py[32] <module> -> Find Control Timeout: {Name: '서브 코드', ControlType: ComboBoxControl}
+2021-05-24 17:12:44.207 dd.py[32] <module> -> Find Control Timeout: {Name: '목록 항목', ControlType: ComboBoxControl}
+2021-05-26 11:35:49.706 dd.py[32] <module> -> Find Control Timeout: {Name: '목록 항목', ControlType: ComboBoxControl}
+2021-05-26 11:36:26.399 dd.py[32] <module> -> Find Control Timeout: {Name: '목록 항목', ControlType: ComboBoxControl}
+2021-05-26 11:36:42.836 dd.py[33] <module> -> Find Control Timeout: {Name: 'WindowsForms10.EDIT.app.0.1ca0192_r20_ad1', ControlType: TextControl}
+2021-05-26 11:38:02.243 dd.py[33] <module> -> Find Control Timeout: {ClassName: 'WindowsForms10.EDIT.app.0.1ca0192_r20_ad1', ControlType: TextControl}
+2021-05-26 13:28:32.470 dd.py[33] <module> -> Find Control Timeout: {ClassName: 'WindowsForms10.EDIT.app.0.1ca0192_r20_ad1', ControlType: TextControl}
+2021-05-26 13:29:13.774 dd.py[33] <module> -> Find Control Timeout: {ClassName: 'textBox_SysEncrypt', ControlType: TextControl}
+2021-05-26 13:30:48.851 dd.py[34] <module> -> Find Control Timeout: {Name: 'textBox_SysEncrypt', ControlType: EditControl}
+2021-05-26 13:31:06.987 dd.py[34] <module> -> Find Control Timeout: {Name: 'WindowsForms10.EDIT.app.0.1ca0192_r20_ad1', ControlType: EditControl}
+2021-05-26 13:31:25.211 dd.py[34] <module> -> Find Control Timeout: {Name: 'sysMIBEncrypt', ControlType: EditControl}
+2021-05-26 13:59:54.322 dd.py[32] <module> -> Find Control Timeout: {Name: 'textBox_SysEncrypt', ControlType: TextControl}
+2021-05-26 14:05:59.618 dd.py[31] <module> -> Find Control Timeout: {Name: '', ControlType: TextControl}
+2021-05-26 14:13:56.971 dd.py[31] <module> -> Find Control Timeout: {Name: 'textBox_RegAvailCode', ControlType: TextControl}
+2021-05-26 14:14:16.222 dd.py[31] <module> -> Find Control Timeout: {AutomationId: 'textBox_RegAvailCode', ControlType: TextControl}
+2021-05-26 14:15:24.904 dd.py[31] <module> -> Find Control Timeout: {AutomationId: 'textBox_PowerupTrapRecv', ControlType: TextControl}
+2021-05-26 16:17:46.548 dd.py[31] <module> -> Find Control Timeout: {AutomationId: 'RegAvailCode', ControlType: TextControl}
+2021-05-26 16:19:44.712 dd.py[31] <module> -> Find Control Timeout: {Name: 'RegAvailCode', ControlType: TextControl}
