@@ -62,12 +62,13 @@ def LPCheck(driver,pnumber): #Step4 검색 시점의 당일 LP 갯수가 맞는�
     time.sleep(2)
     number=driver.find_element_by_xpath("//div[@id='tbtext-1126']").text
     choice=number[4:6] # 검색 시점의 LP 총 갯수
-    print("총 갯수 "+choice)
+#    print("총 갯수 "+choice)
     choice=int(choice)
     now=datetime.now()
     checknum=int((now.hour*4)+(now.minute/15))
-    print("계산된 갯수 "+str(checknum))
+#    print("계산된 갯수 "+str(checknum))
     if checknum==choice :
         print("good")
     else :
         print("bad")
+    driver.find_element_by_xpath("//a[@id='tab-1215-closeEl']").click()  # 사용량정보창 종료
