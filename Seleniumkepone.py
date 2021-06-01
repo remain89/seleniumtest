@@ -6,7 +6,7 @@ import keponefunction
 chromedriver='C:\chromedriver.exe'
 driver=webdriver.Chrome(chromedriver)
 
-phone="01227717182"
+phone="01227717182" # 모뎀 전화번호
 
 driver.get('http://59.3.93.125:8085/aimir/login')
 keponefunction.Login(driver)
