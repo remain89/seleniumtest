@@ -11,5 +11,6 @@ phone="01227717182" # 모뎀 전화번호
 driver.get('http://59.3.93.125:8085/aimir/login')
 keponefunction.Login(driver)
 time.sleep(6)
-keponefunction.LPDownload(driver,phone)
-keponefunction.GMMPTest(driver,phone)
+#keponefunction.LPDownload(driver,phone)
+#keponefunction.GMMPTest(driver,phone)
+keponefunction.LPCheck(driver,phone)
