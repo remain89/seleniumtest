@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from datetime import datetime
 import time
 
@@ -58,16 +59,28 @@ def LPCheck(driver,pnumber): #Step4 검색 시점의 당일 LP 갯수가 맞는�
 
     phonenum=driver.find_element_by_xpath("//input[@id='textfield-1195-inputEl']") # 검색
     phonenum.send_keys(pnumber)
-    driver.find_element_by_xpath("//div[@class='x-btn x-btn-search x-box-item x-btn-default-small x-noicon x-btn-noicon x-btn-default-small-noicon']").click()
+    #driver.find_element_by_xpath("//div[@class='x-btn x-btn-search x-box-item x-btn-default-small x-noicon x-btn-noicon x-btn-default-small-noicon']").click() #검색버튼 클릭
+    phonenum.send_keys(Keys.RETURN) #모뎀번호에서 엔터눌러서 검색
     time.sleep(2)
     number=driver.find_element_by_xpath("//div[@id='tbtext-1126']").text
     choice=number[4:6] # 검색 시점의 LP 총 갯수
-#    print("총 갯수 "+choice)
+    print("총 갯수 "+choice)
     choice=int(choice)
     now=datetime.now()
     checknum=int((now.hour*4)+(now.minute/15))
-#    print("계산된 갯수 "+str(checknum))
-    if checknum==choice :
+    print("계산된 갯수 "+str(checknum))
+
+    snum=0
+    sanum = 0
+    sumnum=driver.find_elements_by_xpath("//*[contains(text(), '전체')]")
+
+    for i in sumnum :
+        snum=snum+1
+    snum=snum-6
+    print("snum is "+str(snum))
+    print("calc num is "+str(checknum*snum))
+
+    if (checknum*snum)==choice :
         print("good")
     else :
         print("bad")
