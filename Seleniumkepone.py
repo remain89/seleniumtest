@@ -17,4 +17,4 @@ time.sleep(6)
 #keponefunction.GMMPTest(driver,phone)
 keponefunction.LPCheck(driver,phone)
 
-driver.quit() # 창 종료
+#driver.quit() # 창 종료

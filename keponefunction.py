@@ -65,11 +65,10 @@ def LPCheck(driver,pnumber): #Step4 검색 시점의 당일 LP 갯수가 맞는�
     time.sleep(2)
     number=driver.find_element_by_xpath("//div[@id='tbtext-1126']").text
     choice=number[4:6] # 검색 시점의 LP 총 갯수
-    print("총 갯수 "+choice)
     choice=int(choice)
     now=datetime.now()
     checknum=int((now.hour*4)+(now.minute/15))
-    print("계산된 갯수 "+str(checknum))
+    print("시간으로 계산된 갯수 "+str(checknum))
 
     snum=0
     sumnum=driver.find_elements_by_xpath("//*[contains(text(), '전체')]")
@@ -77,11 +76,16 @@ def LPCheck(driver,pnumber): #Step4 검색 시점의 당일 LP 갯수가 맞는�
     for i in sumnum :
         snum=snum+1
     snum=snum-6
-    print("snum is "+str(snum))
-    print("calc num is "+str(checknum*snum))
 
+    if (snum*choice)>100 :
+        choice = number[4:7]  # 검색 시점의 LP 총 갯수
+
+    print("검침 총 갯수 " + str(choice))
+    print("모뎀에 연결된 미터 갯수는 "+str(snum))
+    print("보유해야할 LP 갯수는 "+str(checknum*snum))
+    print("-----결과-----")
     if (checknum*snum)==choice :
         print("LP 데이터 수량 일치")
     else :
         print("LP 데이터 수량 불일치, 확인이 필요함")
-    driver.find_element_by_xpath("//a[@id='tab-1215-closeEl']").click()  # 사용량정보창 종료
+#    driver.find_element_by_xpath("//a[@id='tab-1215-closeEl']").click()  # 사용량정보창 종료
