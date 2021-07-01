@@ -189,19 +189,9 @@ while True:
     print('level2')
     print(latest_file + '\n')
     print(latest_file[-12:] + '\nlocation2\n')
-    #	if latest_file[-3:]!='xls' :  #가장 최근파일의 확장자가 octet-stream이 아닌경우에 와일문 종료
-    if latest_file[-3:] != 'eam':  # 가장 최근파일의 확장자가 octet-stream이 아닌경우에 와일문 종료
+    if latest_file[-3:] != 'xls':  # 가장 최근파일의 확장자가 octet-stream이 아닌경우에 와일문 종료, 테스트용으로 코드변경함 추후 수정 필요
         print('location3\n')
         break
-    '''
-    fantasy_zip = zipfile.ZipFile(latest_file)
-    path = os.getcwd()+'/LPdata '+str(datetime.today().year)+'-'+str(datetime.today().month)+'-'+str(datetime.today().day)
-    fantasy_zip.extractall(path)
-    print('location4\n')
-    fantasy_zip.close()
-    xlsfiles=glob.glob(path+'/*')
-    filename = max(xlsfiles, key=os.path.getctime)
-    os.remove(latest_file)	 # 작업한 프로그램 삭제
-    '''
+    print("?")
     glp(latest_file, tfile)
     shutil.move(latest_file, epath)
