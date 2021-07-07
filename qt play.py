@@ -14,6 +14,7 @@ class MyWindow(QDialog, form_class):
         self.pushButton.clicked.connect(self.btn_clicked)
         self.pushButton_2.clicked.connect(self.btn2_clicked)
         self.pushButton_3.clicked.connect(self.btn3_clicked)
+        self.pushButton_4.clicked.connect(self.btn4_clicked)
 
     def btn_clicked(self) :
       number=self.textEdit.toPlainText()
@@ -44,6 +45,16 @@ class MyWindow(QDialog, form_class):
         keponefunction.Login(driver)
 
         keponefunction.GMMPTest(driver,number)
+
+    def btn4_clicked(self) :
+        number = self.textEdit.toPlainText()
+        mnumber = self.textEdit_2.toPlainText()
+        chromedriver = 'C:\chromedriver.exe'
+        driver = webdriver.Chrome(chromedriver)
+        driver.get('http://59.3.93.125:8085/aimir/login')
+        keponefunction.Login(driver)
+
+        keponefunction.SELP(driver,number,mnumber)
 
 if __name__ == "__main__":
    app = QApplication(sys.argv)
