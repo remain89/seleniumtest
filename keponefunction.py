@@ -142,7 +142,7 @@ def SELP(driver,pnumber,mnumber) :
         messagebox.showinfo("알림창","해당 계기의 LP 데이터가 100개가 되지 않음 확인 요망")
         return 0
 
-
+    # 검침 데이터 삭제
     element = driver.find_element_by_link_text('시스템 관리')
     hov = ActionChains(driver).move_to_element(element)
     hov.perform()
@@ -165,6 +165,15 @@ def SELP(driver,pnumber,mnumber) :
     driver.find_element_by_xpath('/html/body/div[15]/div[3]/div/div/div[2]/em/button').click()
     time.sleep(2)
     driver.find_element_by_xpath('/html/body/div[15]/div[3]/div/div/div[1]/em/button').click()
+
+    #검침 데이터 삭제 후 LP 데이터 조회
+    element = driver.find_element_by_link_text('검침 정보')  # 검침정보창 열기
+    hov = ActionChains(driver).move_to_element(element)
+    hov.perform()
+    driver.find_element_by_link_text('사용량 조회').click()  # 사용량정보창 열기
+    meternum.send_keys(Keys.RETURN)  # 미터번호에서 엔터눌러서 검색
+    time.sleep(1)
+    driver.find_element_by_xpath('/html/body/div[17]/div[3]/div/div/div/em/button').click()
 
     # 모뎀 환경설정 실행
     element = driver.find_element_by_link_text('모뎀관리')  # 모뎀관리창 열기
@@ -193,7 +202,7 @@ def SELP(driver,pnumber,mnumber) :
     driver.find_element_by_xpath('/html/body/div[2]/div[2]/div[4]/div[1]/div/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[4]/em/button').click()
     time.sleep(2)
     driver.find_element_by_xpath('/html/body/div[15]/div[3]/div/div/div[1]/em/button').click()
-    time.sleep(90)
+    time.sleep(180)
   #  time.sleep(5)
 
 
@@ -213,3 +222,26 @@ def SELP(driver,pnumber,mnumber) :
         return 0
 
     messagebox.showinfo("알림창", "정상 동작 확인됨\n현재 총 " + number[4:6] + '개 입니다.')
+
+def fileOTA(driver,pnumber,route) :
+    element = driver.find_element_by_link_text('시스템 관리')
+    hov = ActionChains(driver).move_to_element(element)
+    hov.perform()
+    element = driver.find_element_by_xpath('/html/body/div[1]/div/div[2]/ul/li[7]/ul/li[2]/a')
+    hovv= ActionChains(driver).move_to_element(element)
+    hovv.perform()
+    driver.find_element_by_link_text('장비 관리').click()
+   # time.sleep(30)
+    phonenumber=driver.find_element_by_xpath('/html/body/div[2]/div[2]/div[2]/div[1]/div[2]/fieldset[2]/div/table/tbody/tr/td[2]/div/div/table[1]/tbody/tr/td[2]/input')
+    phonenumber.send_keys(pnumber)
+    phonenumber.send_keys(Keys.RETURN)
+    driver.find_element_by_xpath('/html/body/div[2]/div[2]/div[2]/div[1]/div[3]/div/div/div/em/button/span[1]').click()
+    time.sleep(5)
+    driver.find_element_by_xpath('/html/body/div[2]/div[2]/div[2]/div[2]/div[3]/div/table/tbody/tr[2]/td[1]/div').click()
+    driver.find_element_by_xpath('/html/body/div[2]/div[2]/div[2]/div[2]/div[1]/div/div/div[8]/em/button/span[1]').click()
+#    driver.find_element_by_xpath('/html/body/div[9]/div[2]/div[1]/div/div[1]/div[1]/div[1]/table/tbody/tr/td[2]/table[1]/tbody/tr/td[2]/table/tbody/tr/td[2]').click()
+    driver.find_element_by_css_selector("input[type='file']").send_keys(route)
+    driver.find_element_by_xpath('/html/body/div[9]/div[2]/div[1]/div/div[1]/div[1]/div[1]/table/tbody/tr/td[2]/div[1]/div/div/table/tbody/tr/td[2]/input').send_keys('1')
+    driver.find_element_by_xpath('/html/body/div[9]/div[2]/div[1]/div/div[1]/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div/div/table/tbody/tr/td[2]/input').send_keys('1')
+    time.sleep(10)
+    driver.find_element_by_xpath('/html/body/div[9]/div[2]/div[1]/div/div[1]/div[1]/div[2]/div/div/div/em/button/span[1]').click()
